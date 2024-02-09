@@ -1,1 +1,1 @@
-export const base_url='https://recipezz-backend.vercel.app'
+export const base_url='https://recipez-server-nkva.onrender.com'
