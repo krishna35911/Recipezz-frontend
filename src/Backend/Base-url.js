@@ -1,1 +1,1 @@
-export const base_url='recipezz-backend.vercel.app'
+export const base_url='recipezz-backend-8gqpoqki6-krishna-k-ps-projects.vercel.app'
