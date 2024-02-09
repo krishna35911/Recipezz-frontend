@@ -1,0 +1,106 @@
+/* Header.css */
+
+/* Header.css */
+
+.navbar {
+  background-color: #a1a19f36;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 60px;
+  position: relative; /* Add relative positioning for proper dropdown positioning */
+}
+
+/* Header.css */
+
+/* ... (other styles) */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #d9d4d4ab;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.10s ease; /* Increase the transition duration for a slower effect */
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+  max-height: 200px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  color: #3c3b3c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+
+/* ... (other styles) */
+
+
+/* ... (other styles) */
+
+  
+  .nav-links button {
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 0.6s ease; /* Adding transition property */
+  }
+  
+  .nav-links button:hover {
+    background-color: rgba(96, 96, 97, 0.377);
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .nav-links a,p {
+    text-decoration: none;
+  color: #3c3b3c;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 10%; /* Start from the middle */
+    width: 0; /* Set to 0 to hide the underline initially */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #000000;
+    transition: width 0.3s ease; /* Adding transition property */
+  }
+
+  .nav-links a:hover::after {
+    width: 80%; /* Extend to the end on hover */
+  }
+  
+  

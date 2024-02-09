@@ -1,0 +1,15 @@
+/* Add these styles to your Usersettings.css */
+
+/* Style for editable fields */
+.form-control.editable {
+  cursor: text; /* Change cursor to text when in edit mode */
+  border: 1px solid #ced4da; /* Add a border to indicate the editable state */
+}
+
+/* Style for readonly fields */
+.form-control.readonly {
+  cursor: not-allowed; /* Change cursor to not-allowed for readonly fields */
+  background-color: #e9ecef; /* Add a background color to indicate the readonly state */
+}
+
+  

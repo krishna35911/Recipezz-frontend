@@ -1,0 +1,10 @@
+.not-editable-input {
+    position: relative;
+  }
+  
+  .not-editable-input[readonly] {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  

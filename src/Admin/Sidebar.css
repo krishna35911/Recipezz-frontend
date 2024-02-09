@@ -1,0 +1,36 @@
+.sidebar {
+    width: 250px;
+    height: 150vh;
+    background-color: #82aab1;
+    color: #000000;
+    padding: 30px;
+    overflow: hidden;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 15px;
+    cursor: pointer; 
+       
+  }
+  /* Add this CSS in your stylesheet */
+  li i
+  {
+    text-decoration: none;
+    color: black;
+  }
+.submenu {
+    display: none;
+    padding:5px;
+  }
+  
+  li:hover .submenu {
+    display: block;
+  }
+  
+  
